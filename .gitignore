@@ -1,0 +1,13 @@
+# Ignorar archivos ejecutables
+*.exe
+
+# Ignorar archivos objeto compilados
+*.o
+*.obj
+
+# Ignorar archivos de respaldo
+*~
+
+# Ignorar directorios de construcción
+build/
+bin/
