@@ -3,15 +3,17 @@
 using namespace std;
 
 int main() {
-    list<int> numbers;
+    list<float> numbers;
 
-    //Add some numbers 
-    numbers.push_back(10);
-    numbers.push_back(25);
-    numbers.push_back(5);
-    numbers.push_back(100);
-    numbers.push_back(50);
+    //Add some numbers
+    float x=1;
+    while(x!=0.0){
+        cout<<"Add a number(0.0 to exit): ";
+        cin>>x;
+        numbers.push_back(x);
+    }
 
+    numbers.pop_back();
     int largest = numbers.front(); 
 
     for (const int& number : numbers) {
@@ -23,7 +25,6 @@ int main() {
     cout<<"The largest number is: " <<largest<<endl;
 
     numbers.remove(largest);
-    numbers.pop_back();
 
     for (const int& number : numbers) {
         std::cout << number <<endl;
