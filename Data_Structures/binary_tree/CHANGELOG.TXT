@@ -1,0 +1,14 @@
+1.0
+- First version.
+1.1
+- tests_btree: test 10 correction.
+1.2
+- Corrected error of traversal tests using the search for a value.
+  By using a single std::cout << expression to
+  run the traversal and print the "count" value, depending on the version
+  of the compiler, "count" can be evaluated before running the traversal and therefore
+  both the value that comes out is the initial value of 0. It is corrected by separating into two
+  std::cout << expressions, the first does the traversal and the second prints the
+  count value modified by the lambda function.
+
+
