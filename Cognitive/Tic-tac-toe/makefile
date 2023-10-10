@@ -1,6 +1,6 @@
 GNUPLOT := -std=c++11
 
-#Si se tiene instalado las librerías boost para desarrollo (sudo apt-get install libboost-all-dev), descomentar la siguiente línea
+#Having boost libraries(sudo apt-get install libboost-all-dev), delete the comment
 #GNUPLOT=-D__GNUPLOT__ -std=c++17 -lutil -lboost_iostreams -lboost_system -lboost_filesystem 
 
 three-in-a-row: three-in-a-row.cpp gnuplot-iostream.h
